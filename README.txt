@@ -9,4 +9,4 @@ Contents:
 Running instructions:
 Place your pdf files in the PDFs folder, then run from the command line with python3 PDFShort.py. Type your search query into the terminal, then press enter. The names of the pdf files containing the search query will be printed to the terminal.
 
-Note: doesn't work properly when searchy query is longer than 1 word for some reason.
+Note: doesn't seem to work properly sometimes when the searchy query is longer than 1 word due to how PyPDF2's extractText() method works (whitespace isn't kept). If this happens, removing whitespace from your search query fixes it.
