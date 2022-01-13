@@ -6,6 +6,10 @@ Contents:
  - PDFs: a directory containing the pdfs to be searched
  - README.txt - this file
 
+Additional requirements:
+Requires that you have Python and PyPDF2 installed.
+PyPDF2: https://pypi.org/project/PyPDF2/
+
 Running instructions:
 Place your pdf files in the PDFs folder, then run from the command line with python3 PDFShort.py. Type your search query into the terminal, then press enter. The names of the pdf files containing the search query will be printed to the terminal.
 
