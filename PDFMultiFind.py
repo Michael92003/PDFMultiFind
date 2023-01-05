@@ -15,11 +15,11 @@ def search(filename,target):
         returns true if target is in the pdf and false if it isn't
     """
     fin = open("PDFs/" + filename,"rb")
-    reader = PyPDF2.PdfFileReader(fin)
+    reader = PyPDF2.PdfReader(fin)
 
-    for i in range(reader.numPages-1):
-        page = reader.getPage(i)
-        if target in page.extractText():
+    for i in range(len(reader.pages)-1):
+        page = reader.pages[i]
+        if target in page.extract_text():
             fin.close()
             return True
     
